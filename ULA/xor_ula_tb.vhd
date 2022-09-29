@@ -9,8 +9,8 @@ architecture a_xor_ula_tb of xor_ula_tb is
     component xor_ula is
         port
         (
-            a     : IN unsigned (15 downto 0);
-            b     : IN unsigned (15 downto 0);
+            x     : IN unsigned (15 downto 0);
+            y     : IN unsigned (15 downto 0);
             saida : OUT unsigned (15 downto 0)
         );
     end component;
@@ -18,7 +18,7 @@ architecture a_xor_ula_tb of xor_ula_tb is
     signal a, b, saida : unsigned(15 downto 0);
     
 begin
-    uut:  xor_ula  port map (a => a, b => b, saida => saida);
+    uut:  xor_ula  port map (x => a, y => b, saida => saida);
     process
     begin
         a <= "0000110000001100";

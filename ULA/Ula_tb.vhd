@@ -13,30 +13,29 @@ architecture a_Ula_tb of Ula_tb is
             dado2             : IN unsigned (15 downto 0);
             op0               : IN std_logic ;
             op1               : IN std_logic ;
-            saida_dado        : OUT unsigned (15 downto 0);
-            saida_sinalizacao : OUT std_logic
+            saida_dado        : OUT unsigned (15 downto 0)
         );
     end component;
     signal dado1, dado2, saida_dado : unsigned(15 downto 0);
-    signal op0, op1, saida_sinalizacao : std_logic;
+    signal op0, op1 : std_logic;
 begin
-    uut: Ula port map(dado1 => dado1, dado2 => dado2, saida_dado => saida_dado, op0 => op0, op1 => op1, saida_sinalizacao => saida_sinalizacao);
+    uut: Ula port map(dado1 => dado1, dado2 => dado2, saida_dado => saida_dado, op0 => op0, op1 => op1);
     process
     begin
         dado1 <= "0000000000000110";  -- 6
         dado2 <= "0000000000001001";  -- 9
         op0 <= '0';
         op1 <= '0';
-        wait for 50 ns;
+        wait for 20 ns;
         op0 <= '1';
         op1 <= '0';
-        wait for 50 ns;
+        wait for 20 ns;
         op0 <= '0';
         op1 <= '1';
-        wait for 50 ns;
+        wait for 20 ns;
         op0 <= '1';
         op1 <= '1';
-        wait for 50 ns;
+        wait for 20 ns;
         wait;
     end process;
 end architecture;

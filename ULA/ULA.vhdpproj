@@ -3,13 +3,11 @@
     <File Include="Ula.vhd" />
     <File Include="Ula_tb.vhd" />
     <File Include="menor.vhd" />
-    <File Include="menor_tb.vcd" />
     <File Include="menor_tb.vhd" />
     <File Include="mux_4.vhd" />
     <File Include="mux_8.vhd" />
     <File Include="mux_8_tb.vhd" />
     <File Include="soma.vhd" />
-    <File Include="soma_tb.vcd" />
     <File Include="soma_tb.vhd" />
     <File Include="subtracao.vhd" />
     <File Include="subtracao_tb.vhd" />
@@ -17,6 +15,6 @@
     <File Include="xor_ula_tb.vhd" />
   </ItemGroup>
   <PropertyGroup>
-    <HardwareStartPath>subtracao_tb.vhd</HardwareStartPath>
+    <HardwareStartPath>Ula_tb.vhd</HardwareStartPath>
   </PropertyGroup>
 </Project>

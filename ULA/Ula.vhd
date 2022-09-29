@@ -6,8 +6,7 @@ entity Ula is
     port(
         dado1, dado2 : in unsigned(15 downto 0);
         op0, op1 : in std_logic;
-        saida_dado : out unsigned(15 downto 0);
-        saida_sinalizacao: out std_logic               -- para verificacao de resultado zero
+        saida_dado : out unsigned(15 downto 0)
     );
 end entity Ula;
 
@@ -63,21 +62,11 @@ begin
     u_sub:   subtracao port map(x => x, y => y, sub => result_sub);
     u_xor:   xor_ula port map(x => x, y => y, saida => result_xor);
     u_menor: menor port map(x => x, y => y, resultado => result_menor);
-    u_mux: mux_4 port map(op0 => op0, op1 => op1, instr0 => result_soma, instr1 => result_sub, instr2 => result_xor, instr3 => result_menor, instr_saida => result_aux);
+    u_mux:   mux_4 port map(op0 => op0, op1 => op1, instr0 => result_soma, instr1 => result_sub, instr2 => result_xor, instr3 => result_menor, instr_saida => result_aux);
     
-    process
-    begin
-        x <= dado1;
-        y <= dado2;
-        
-        saida_dado <= result_aux;
-        
-        if result_sub = "0000000000000000" then
-            saida_sinalizacao <= '1';
-        else
-            saida_sinalizacao <= '0';
-            
-        end if;
-        end process;
- 
-    end architecture a_Ula;
+    x <= dado1;
+    y <= dado2;
+    
+    saida_dado <= result_aux;
+    
+end architecture a_Ula;
