@@ -1,0 +1,37 @@
+
+# auto-generated
+[Libraries]
+work.files = [
+	'Ula.vhd',
+	'Ula_tb.vhd',
+	'menor.vhd',
+	'menor_tb.vhd',
+	'mux_4.vhd',
+	'mux_8.vhd',
+	'mux_8_tb.vhd',
+	'soma.vhd',
+	'soma_tb.vhd',
+	'subtracao.vhd',
+	'subtracao_tb.vhd',
+	'xor_ula.vhd',
+	'xor_ula_tb.vhd'
+]
+[libraries.work]
+files = [
+	'Ula.vhd',
+	'Ula_tb.vhd',
+	'menor.vhd',
+	'menor_tb.vhd',
+	'mux_4.vhd',
+	'mux_8.vhd',
+	'mux_8_tb.vhd',
+	'soma.vhd',
+	'soma_tb.vhd',
+	'subtracao.vhd',
+	'subtracao_tb.vhd',
+	'xor_ula.vhd',
+	'xor_ula_tb.vhd'
+]
+# auto-generated-end[Libraries]
+work.files = [
+]
