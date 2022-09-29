@@ -1,0 +1,50 @@
+$date
+  Tue Sep 27 12:21:30 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module textio $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module subtracao_tb $end
+$var reg 16 ! x[15:0] $end
+$var reg 16 " y[15:0] $end
+$var reg 16 # sub[15:0] $end
+$scope module uut $end
+$var reg 16 $ x[15:0] $end
+$var reg 16 % y[15:0] $end
+$var reg 16 & sub[15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000000000000000 !
+b0000100000000000 "
+b1111100000000000 #
+b0000000000000000 $
+b0000100000000000 %
+b1111100000000000 &
+#50000000
+b0000111100000000 !
+b0000101000000000 "
+b0000010100000000 #
+b0000111100000000 $
+b0000101000000000 %
+b0000010100000000 &
+#100000000
+b0110010000000000 !
+b0110010000000000 "
+b0000000000000000 #
+b0110010000000000 $
+b0110010000000000 %
+b0000000000000000 &
+#150000000
